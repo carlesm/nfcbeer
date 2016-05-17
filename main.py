@@ -90,7 +90,7 @@ class FlowControl(object):
             if self.user != -2:
                 print "+"
                 print "user", self.user, " drank ", self.service
-                self.server("1", self.user, self.service)
+                self.server.update_score("1", self.user, self.service)
             # Guardar a usuari self.service
             self.service = 0
             self.user = self._get_user()
