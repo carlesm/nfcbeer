@@ -140,5 +140,6 @@ class BeerControl(object):
 if __name__ == "__main__":
     arguments = docopt(doc=__doc__, version="NFCBEER 1.0")
     print arguments
-    c = BeerControl()
-    c.run()
+    if arguments["client"]:
+        c = BeerControl()
+        c.run()
