@@ -24,6 +24,36 @@ users = [
 ]
 
 
+# import MFRC522
+
+
+# class NFCReader(object):
+#
+#     nfc = MFRC522.MFRC522()
+#     keya = [0x6B, 0x65, 0x79, 0x20, 0x61, 0x00]   # key a
+#     keyb = [0x6B, 0x65, 0x79, 0x20, 0x62, 0x00]   # key b
+#
+#     keyid1 = nfc.PICC_AUTHENT1A
+#     keyid2 = nfc.PICC_AUTHENT1B
+#
+#     def __init__(self):
+#         pass
+#
+#     def is_card(self):
+#         (status, TagType) = self.nfc.MFRC522_Request(self.nfc.PICC_REQIDL)
+#         return status == self.nfc.MI_OK
+#
+#     def read_id(self):
+#         (status, uid) = self.nfc.MFRC522_Anticoll()
+#         if status != self.nfc.MI_OK:
+#             return -1
+#         else:
+#             return ''.join(format(x, '02x') for x in uid)
+
+
+
+
+
 class FakeNFCReader(object):
     """
     Fake NFC Reader class
